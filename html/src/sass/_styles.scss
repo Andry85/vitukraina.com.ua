@@ -1,0 +1,10 @@
+﻿
+
+.andry {
+	color: red;
+	background: #000;
+	@include breakpoint(sm-down) {
+  		background: yellow;
+  }
+}
+

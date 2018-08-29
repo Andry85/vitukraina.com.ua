@@ -1060,7 +1060,7 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.42857;
-  color: #333333;
+  color: #333;
   background-color: #fff; }
 
 input,
@@ -2310,7 +2310,7 @@ output {
   padding-top: 7px;
   font-size: 14px;
   line-height: 1.42857;
-  color: #555555; }
+  color: #8c8c8c; }
 
 .form-control {
   display: block;
@@ -2319,10 +2319,10 @@ output {
   padding: 6px 12px;
   font-size: 14px;
   line-height: 1.42857;
-  color: #555555;
+  color: #8c8c8c;
   background-color: #fff;
   background-image: none;
-  border: 1px solid #ccc;
+  border: 1px solid #d1d1d0;
   -webkit-border-radius: 4px;
           border-radius: 4px;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
@@ -3523,10 +3523,10 @@ tbody.collapse.in {
   font-size: 14px;
   font-weight: normal;
   line-height: 1;
-  color: #555555;
+  color: #8c8c8c;
   text-align: center;
   background-color: #eeeeee;
-  border: 1px solid #ccc;
+  border: 1px solid #d1d1d0;
   -webkit-border-radius: 4px;
           border-radius: 4px; }
   .input-group-addon.input-sm,
@@ -4435,7 +4435,7 @@ a.badge:hover, a.badge:focus {
     margin-right: auto; }
   .thumbnail .caption {
     padding: 9px;
-    color: #333333; }
+    color: #333; }
 
 a.thumbnail:hover,
 a.thumbnail:focus,
@@ -6041,9 +6041,8 @@ body {
   font-size: 16px;
   color: #333; }
 
-.andry {
-  color: red;
-  background: #000; }
-  @media (max-width: 767px) {
-    .andry {
-      background: yellow; } }
+.svg-icons--facebook-logo-key-dims {
+  width: 20px;
+  height: 20px;
+  -webkit-background-size: cover;
+          background-size: cover; }

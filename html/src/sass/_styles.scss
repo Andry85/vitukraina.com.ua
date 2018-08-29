@@ -1,10 +1,7 @@
 ﻿
 
-.andry {
-	color: red;
-	background: #000;
-	@include breakpoint(sm-down) {
-  		background: yellow;
-  }
+.svg-icons--facebook-logo-key-dims {
+	width: 20px;
+	height: 20px;
+	background-size: cover;
 }
-

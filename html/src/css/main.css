@@ -1060,7 +1060,7 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.42857;
-  color: #333;
+  color: #000;
   background-color: #fff; }
 
 input,
@@ -2310,7 +2310,7 @@ output {
   padding-top: 7px;
   font-size: 14px;
   line-height: 1.42857;
-  color: #8c8c8c; }
+  color: #555555; }
 
 .form-control {
   display: block;
@@ -2319,10 +2319,10 @@ output {
   padding: 6px 12px;
   font-size: 14px;
   line-height: 1.42857;
-  color: #8c8c8c;
+  color: #555555;
   background-color: #fff;
   background-image: none;
-  border: 1px solid #d1d1d0;
+  border: 1px solid #ccc;
   -webkit-border-radius: 4px;
           border-radius: 4px;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
@@ -2722,7 +2722,7 @@ select[multiple].input-lg,
   display: block;
   margin-top: 5px;
   margin-bottom: 10px;
-  color: #737373; }
+  color: #404040; }
 
 @media (min-width: 768px) {
   .form-inline .form-group {
@@ -3523,10 +3523,10 @@ tbody.collapse.in {
   font-size: 14px;
   font-weight: normal;
   line-height: 1;
-  color: #8c8c8c;
+  color: #555555;
   text-align: center;
   background-color: #eeeeee;
-  border: 1px solid #d1d1d0;
+  border: 1px solid #ccc;
   -webkit-border-radius: 4px;
           border-radius: 4px; }
   .input-group-addon.input-sm,
@@ -4435,7 +4435,7 @@ a.badge:hover, a.badge:focus {
     margin-right: auto; }
   .thumbnail .caption {
     padding: 9px;
-    color: #333; }
+    color: #000; }
 
 a.thumbnail:hover,
 a.thumbnail:focus,
@@ -5980,7 +5980,7 @@ img, table {
   border: none; }
 
 a {
-  color: #000;
+  color: #4d7998;
   text-decoration: none;
   -webkit-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
@@ -6001,7 +6001,9 @@ header, footer, article, section, hgroup, nav, menu, aside, figure, main, video,
 
 h1, h2, h3, h4, h5, h6 {
   margin: 10px 0;
-  font-weight: bold; }
+  padding: 15px 0;
+  font-weight: bold;
+  font-family: 'PT Sans Narrow', sans-serif; }
 
 h1 {
   font-size: 36px; }
@@ -6025,7 +6027,7 @@ ul, ol {
   list-style: none; }
 
 p {
-  margin: 10px 0; }
+  margin: 26px 0; }
 
 img {
   width: auto\9;
@@ -6037,12 +6039,20 @@ img {
 
 body {
   background: #fff;
-  font-family: 'Lato', sans-serif;
+  font-family: 'PT Sans', sans-serif;
   font-size: 16px;
-  color: #333; }
+  color: #000;
+  line-height: 1.5; }
 
-.svg-icons--facebook-logo-key-dims {
-  width: 20px;
-  height: 20px;
-  -webkit-background-size: cover;
-          background-size: cover; }
+.button {
+  background: #e04404;
+  display: inline-block;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  min-width: 200px;
+  padding: 11px 15px 12px 15px; }
+  .button:hover {
+    opacity: 0.7;
+    text-decoration: none;
+    color: #fff; }

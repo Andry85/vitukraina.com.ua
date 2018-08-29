@@ -9,7 +9,7 @@ img, table {border: none;}
 
 
 a {
-	color: #000;
+	color: #4d7998;
 	text-decoration: none;
 	transition: all 0.5s ease;
 	&:hover,
@@ -31,8 +31,10 @@ header,footer,article,section,hgroup,nav,menu,aside,figure,main,video,address,pi
 
 h1, h2, h3, h4, h5, h6 {
 	margin: 10px 0;
+	padding: 15px 0;
 	font: {
 	    weight: bold;
+	    family: 'PT Sans Narrow', sans-serif;
 	}
 }
 h1 {font-size: 36px;}
@@ -44,7 +46,9 @@ h6 {font-size: 12px;}
 
 ul, ol {list-style:none;}
 
-p {margin: 10px 0;}
+p {
+	margin: 26px 0;
+}
 
 img{width:auto\9;height:auto;max-width:100%;vertical-align:middle;border:0;-ms-interpolation-mode:bicubic;}
 
@@ -55,8 +59,25 @@ body {
 	background: #fff;
 
 	font: {
-		family: 'Lato', sans-serif;
+		family: 'PT Sans', sans-serif;
 		size: 16px;
 	}
 	color: $text-color;
+	line-height: 1.5;
+
+}
+
+.button {
+	background: #e04404;
+	display: inline-block;
+	color: #fff;
+	text-transform: uppercase;
+	text-align: center;
+	min-width: 200px;
+	padding: 11px 15px 12px 15px;
+	&:hover {
+		opacity: 0.7;
+		text-decoration: none;
+		color: #fff;
+	}
 }

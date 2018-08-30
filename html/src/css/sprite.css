@@ -16,9 +16,51 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 // HTML
 <i class="icon icon-home"></i>
 */
-.icon-call-answer {
+.icon-email-icon {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -36px;
+  width: 16px;
+  height: 14px;
+}
+.icon-eng-flag {
   background-image: url(../img/sprite.png);
   background-position: 0px 0px;
   width: 16px;
+  height: 12px;
+}
+.icon-facebook {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -82px;
+  width: 24px;
+  height: 24px;
+}
+.icon-home-icon {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -50px;
+  width: 16px;
   height: 16px;
+}
+.icon-phone-icon {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -66px;
+  width: 16px;
+  height: 16px;
+}
+.icon-rus-flag {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -12px;
+  width: 16px;
+  height: 12px;
+}
+.icon-ua-flag {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -24px;
+  width: 16px;
+  height: 12px;
+}
+.icon-youtube {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -106px;
+  width: 24px;
+  height: 24px;
 }

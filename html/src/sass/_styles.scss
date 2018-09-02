@@ -2,6 +2,11 @@
   display: inline-block;
 }
 
+.wrap {
+	flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: auto;
+}
 /* START HEADER */
 .header {
 	@include breakpoint(md-down) {
@@ -377,6 +382,9 @@
 /* START FOOTER */
 .footer {
 	background: #0a1f2f;
+	flex-grow: 0;
+	flex-shrink: 0;
+	flex-basis: auto;
 	&__top {
 		padding: 29px 0;
 	}

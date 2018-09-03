@@ -1009,3 +1009,8 @@
   }
 }
 /* END ANIMATION */
+
+div[id^="pg-"],
+div[id^="pl-"]  {
+	margin-bottom: 0!important;
+}

@@ -7051,3 +7051,6 @@ body {
     transform: translateX(-1px) rotate(0); } }
 
 /* END ANIMATION */
+div[id^="pg-"],
+div[id^="pl-"] {
+  margin-bottom: 0 !important; }

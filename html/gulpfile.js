@@ -73,7 +73,7 @@ gulp.task('useref', function () {
     	//.pipe(gulpIf('*.css', minifyCSS()))
 	    // Uglifies only if it's a Javascript file
 	    .pipe(gulpIf('*.js', uglify()))
-        .pipe(gulp.dest('dist'));
+        .pipe(gulp.dest('dist'))
 });
 
 
@@ -85,7 +85,6 @@ gulp.task('images', function() {
 });
 
 
-
 gulp.task('libs', function() {
     return gulp.src('src/libs/**/*')
         .pipe(gulp.dest('dist/libs'))
@@ -94,8 +93,10 @@ gulp.task('libs', function() {
 
 
 gulp.task('clean:dist', function(callback){
-    del(['dist/**/*', '!dist/img', '!dist/img/**/*','!dist/fonts', '!dist/fonts/**/*', '!dist/js', '!dist/js/**/*'], callback)
+    del(['dist/**/*'], callback)
 });
+
+
 
 gulp.task('default', function (callback) {
     runSequence(['sass', 'sprite', 'browserSync', 'watch'], callback)
@@ -103,7 +104,36 @@ gulp.task('default', function (callback) {
 
 
 
+/* Move files to theme */
+gulp.task('imagestheme', function() {
+    return gulp.src('dist/img/**/*')
+        .pipe(gulp.dest('../wp-content/themes/vitukraine/img/'))
+});
+
+
+gulp.task('libstheme', function() {
+    return gulp.src('dist/libs/**/*')
+        .pipe(gulp.dest('../wp-content/themes/vitukraine/libs/'))
+});
+
+gulp.task('jstheme', function() {
+    return gulp.src('dist/js/**/*')
+        .pipe(gulp.dest('../wp-content/themes/vitukraine/js/'))
+});
+
+gulp.task('csstheme', function() {
+    return gulp.src('dist/css/**/*')
+        .pipe(gulp.dest('../wp-content/themes/vitukraine/css/'))
+});
+
+
 
 gulp.task('build', function (callback) {
-    runSequence(['clean:dist', 'sass', 'useref', 'fonts', 'images', 'libs'], callback)
+    runSequence(['sass', 'useref', 'images', 'libs'], 
+      'imagestheme', 
+      'libstheme',
+      'jstheme', 
+      'csstheme', 
+      callback)
 });
+

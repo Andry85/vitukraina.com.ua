@@ -6514,7 +6514,7 @@ body {
   -webkit-transition-duration: 0.3s;
   -o-transition-duration: 0.3s;
      transition-duration: 0.3s; }
-  .button:hover {
+  .button:hover,.button:active {
     text-decoration: none;
     color: #fff; }
   .button:hover:before, .button:focus:before, .button:active:before {
@@ -6656,7 +6656,7 @@ body {
     @media (min-width: 992px) {
       .menu__item:hover > ul {
         display: block; } }
-  .menu__item--active a {
+  .menu__item--active a,.menu__item.current_page_item a {
     text-decoration: none;
     background: #fff;
     color: #274c9c; }

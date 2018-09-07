@@ -6697,9 +6697,11 @@ body {
     font-size: 48px;
     color: #fff;
     text-transform: uppercase;
+    max-width: 378px;
     margin: 0 0 0 92px; }
     @media (max-width: 767px) {
       .mainSlider__item h2 {
+        max-width: 220px;
         margin: 0;
         font-size: 30px; } }
   .mainSlider__item .button {
@@ -6721,20 +6723,13 @@ body {
       -webkit-background-size: 660px -webkit-calc(100vh - 80px);
               background-size: 660px calc(100vh - 80px); } }
 
-.mainSlider__item--1 {
-  background-image: url("../img/001.jpg"); }
-  .mainSlider__item--1 h2 {
-    max-width: 378px; }
-    @media (max-width: 767px) {
-      .mainSlider__item--1 h2 {
-        max-width: 220px; } }
 
-.mainSlider__item--2 {
-  background-image: url("../img/002.jpg"); }
-  .mainSlider__item--2 h2 {
+
+
+  .owl-item:last-child .mainSlider__item h2 {
     max-width: 578px; }
     @media (max-width: 767px) {
-      .mainSlider__item--2 h2 {
+      .owl-item:last-child .mainSlider__item h2 {
         max-width: 220px; } }
 
 .mainSlider .owl-carousel .owl-dots {
@@ -7491,3 +7486,11 @@ body {
 div[id^="pg-"],
 div[id^="pl-"] {
   margin-bottom: 0 !important; }
+
+.errorPage {
+  padding: 60px 0;
+  text-align: center;
+}
+.errorPage h1 {
+  font-size: 68px;
+}

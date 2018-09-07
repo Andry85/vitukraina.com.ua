@@ -1,13 +1,16 @@
 <?php get_header();  ?>
-<div class="content clearfix">
-	<div class="left-col">
-		<?php get_sidebar(); ?>
-	</div>
-	<div class="right-col">
-		<div class="error">
-			<h2>404</h2>
-			<p>Sorry, page not found!</p>
-		</div>
-	</div>
-</div>   
-<?php get_footer();  ?>
+	<main class="main">
+
+		<div class="container">
+		  	<div class="row">
+				<div class="col-xs-12">
+					<div class="errorPage">
+						<h1>404</h1>
+						<p>Sorry, page not found!</p>
+					</div>
+
+				</div>	
+			</div>
+		</div>	
+	</main>	
+<?php get_footer();  ?>	

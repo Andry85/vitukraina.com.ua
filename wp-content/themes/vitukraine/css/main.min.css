@@ -6642,7 +6642,7 @@ body {
       padding: 14px 24px 18px 24px;
       font-family: 'PT Sans Narrow', sans-serif;
       font-size: 22px; }
-      .menu__item a:hover, .menu__item a:active {
+      .menu__item a:hover, .menu__item a:active,.menu__item a:focus {
         text-decoration: none;
         background: #fff;
         color: #274c9c; }

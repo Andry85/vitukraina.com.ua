@@ -1,12 +1,13 @@
-
 # BEGIN WordPress
 <IfModule mod_rewrite.c>
 RewriteEngine On
-RewriteBase /vitukraina.com.ua/
+RewriteBase /
 RewriteRule ^index\.php$ - [L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule . /vitukraina.com.ua/index.php [L]
+RewriteRule . /index.php [L]
+#RewriteCond %{SERVER_PORT} !^443$
+#RewriteRule ^(.*)$ https://vitukraina.com.ua/$1 [R=301,L]
 </IfModule>
 
 # END WordPress

@@ -17,8 +17,8 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 <i class="icon icon-home"></i>
 */
 .icon-email-icon {
-  background-image: url(../img/sprite.png);
-  background-position: 0px -36px;
+  background-image: url(../img/speech-bubbles-comment-option.svg);
+  background-size: 16px 14px;
   width: 16px;
   height: 14px;
 }
@@ -35,14 +35,14 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   height: 24px;
 }
 .icon-home-icon {
-  background-image: url(../img/sprite.png);
-  background-position: 0px -50px;
+  background-image: url(../img/house-black-silhouette-without-door.svg);
+  background-size: 16px 16px;
   width: 16px;
   height: 16px;
 }
 .icon-phone-icon {
-  background-image: url(../img/sprite.png);
-  background-position: 0px -66px;
+  background-image: url(../img/call-answer.svg);
+  background-size: 16px 16px;
   width: 16px;
   height: 16px;
 }

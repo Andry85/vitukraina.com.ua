@@ -6633,9 +6633,7 @@ body {
   display: -ms-flexbox;
   display: flex; }
   .menu__item {
-    position: relative; }
-    .menu__item:first-child {
-      display: none; }
+    position: relative;}
     .menu__item a {
       color: #fff;
       display: block;

@@ -27,12 +27,12 @@ define('DB_NAME', 'vitukraina');
 /** MySQL database username */
 // ** Localhost DB_USER: root ** //
 // ** Website DB_USER: vitukraina ** //
-define('DB_USER', 'vitukraina');
+define('DB_USER', 'root');
 
 /** MySQL database password */
 // ** Localhost DB_PASSWORD:  ** //
 // ** Website DB_PASSWORD: Kefts56$2 ** //
-define('DB_PASSWORD', 'Kefts56$2');
+define('DB_PASSWORD', '');
 
 /** MySQL hostname */
 define('DB_HOST', 'localhost');

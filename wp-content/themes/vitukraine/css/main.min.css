@@ -6608,7 +6608,32 @@ body {
   height: 90px;
   display: block;
   text-indent: -9000px;
-  overflow: hidden; }
+  overflow: hidden; 
+  float: left;
+}
+
+.certificatesList {
+  float: left;
+  margin: 20px 0 0 65px;
+}
+.certificatesList__item {
+  float: left;
+  margin-right: 10px;
+  width: 61px;
+}
+
+ @media (max-width: 1199px) {
+    .certificatesList {
+      margin: 20px 0 0 25px;
+    }
+}
+@media (max-width: 991px) {
+  .certificatesList {
+     margin: 5px 0 0 25px;
+  }
+}
+
+
   @media (max-width: 991px) {
     .logo {
       width: 60px;

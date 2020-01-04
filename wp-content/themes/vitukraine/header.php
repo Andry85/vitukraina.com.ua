@@ -25,7 +25,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			<div class="header__top">
 				<div class="container">
 				  	<div class="row">
-						<div class="col-xs-4 col-sm-3 col-md-4 col-lg-5">
+						<div class="col-sm-12 col-md-4 col-lg-5">
 							 <?php if ( is_front_page() ): ?>
 
 								    <a class="logo" href="<?php echo get_home_url(); ?>">
@@ -39,6 +39,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 									</a>
 
 							<?php endif ?>
+
+							<ul class="certificatesList">
+								<li class="certificatesList__item">
+									<a target="_blank" href="<?php echo get_template_directory_uri(); ?>/img/certificat_1-big.png">
+										<img src="<?php echo get_template_directory_uri(); ?>/img/certificat_1-small.png">
+									</a>
+								</li>
+								<li class="certificatesList__item">
+									<a target="_blank" href="<?php echo get_template_directory_uri(); ?>/img/certificat_2-big.png">
+										<img src="<?php echo get_template_directory_uri(); ?>/img/certificat_2-small.png">
+									</a>
+								</li>
+							</ul>
+
 						</div>
 						<div class="col-sm-7 col-md-6 col-lg-5 hidden-xs hidden-sm">
 							<ul class="header__contacts">
